@@ -1,7 +1,7 @@
 # Docker-compose stack for development purposes
 # DO NOT USE THIS IN PRODUCTION
 
-name: clic-template
+name: icelan-website
 
 include:
   - path: directus-config/directus.yaml
@@ -22,4 +22,4 @@ services:
     volumes:
       - "./Caddyfile.dev:/etc/caddy/Caddyfile"
     ports:
-      - "80:80"
+      - "1300:1300"

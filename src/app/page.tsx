@@ -13,13 +13,6 @@ export default async function Home() {
   const translations = getTranslation(association, "en");
 
   return (
-    <main>
-      <p></p>
-      <div>
-        <DirectusImage img={translations.banner} sizes="50rem" cover />
-      </div>
-
-      <pre>{translations.description}</pre>
-    </main>
+    <></>
   );
 }
