@@ -1,6 +1,6 @@
 import "@/styles/style.scss";
-//import Header from "@/components/Header";
-import Footer from"@/components/Footer";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { directus } from "@/directus";
 import { readItems, readTranslations } from "@directus/sdk";
 
@@ -18,6 +18,7 @@ export default async function RootLayout({
     return (
 	    <html>
 	        <body>
+            <Header/>
 		        <main>{children}</main>
 		        <Footer/>
             </body>
