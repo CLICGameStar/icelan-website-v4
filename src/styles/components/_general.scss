@@ -1,22 +1,21 @@
 @use "../abstracts/" as *;
 
 .container {
-    margin: 1.5em; 
-    max-width: 200ch;
+  margin: 1.5em;
+  max-width: 200ch;
 }
-@media (min-width:30rem) {
-    .container {
-        margin: 2.5em;
-    }
+@media (min-width: 30rem) {
+  .container {
+    margin: 2.5em;
+  }
 }
-@media (min-width:40rem) {
-    .container {
-        margin: 3em;
-    } 
+@media (min-width: 40rem) {
+  .container {
+    margin: 3em;
+  }
 }
-@media (min-width:60rem) {
-    .container {
-        margin: 5em; 
-     }
+@media (min-width: 60rem) {
+  .container {
+    margin: 5em;
+  }
 }
-

@@ -12,18 +12,16 @@ export default function NavBar({
         <Image
           src="/logo-white.svg"
           className="logo"
-          width={100}  
-          height={50} 
-          alt = "Logo"
+          width={100}
+          height={50}
+          alt="Logo"
         />
       </a>
       <nav className="nav-bar-links">
         <ul>
           {navLinks.map((link) => (
             <li key={link.href}>
-              <Link href={link.href}>
-                {link.name}
-              </Link>
+              <Link href={link.href}>{link.name}</Link>
             </li>
           ))}
         </ul>

@@ -4,7 +4,6 @@ import Footer from "@/components/Footer";
 import { directus } from "@/directus";
 import { readItems, readTranslations } from "@directus/sdk";
 
-
 export const metadata = {
   title: "Icelan",
   description: "25h de tournois de jeux vidéo et jeux de plateau!",
@@ -15,13 +14,13 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-    return (
-	    <html>
-	        <body>
-            <Header/>
-		        <main>{children}</main>
-		        <Footer/>
-            </body>
-	    </html>
-    );
+  return (
+    <html>
+      <body>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </body>
+    </html>
+  );
 }
