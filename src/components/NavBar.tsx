@@ -17,7 +17,7 @@ export default function NavBar({
           alt="Logo"
         />
       </a>
-      <nav className="nav-bar-links">
+      <nav className="nav-bar-right">
         <ul>
           {navLinks.map((link) => (
             <li key={link.href}>
