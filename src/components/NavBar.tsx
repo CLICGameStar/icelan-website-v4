@@ -10,7 +10,7 @@ export default function NavBar({
     <header className="nav-bar">
       <a href="/" className="logo-link">
         <Image
-          src="../../public/logo-white.svg"
+          src="/logo-white.svg"
           className="logo"
           width={100}  
           height={50} 

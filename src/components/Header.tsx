@@ -10,10 +10,10 @@ export default function Header() {
             { name: "Acceuil", href: "/" },
             { name: "Infos" , href: "/infos" },
             { name: "Règlement", href: "/regles" },
+            { name: "Galerie", href: "/galerie" },
             { name: "Inscriptions", href: "insc_form_link" },
             { name: "Staffing", href: "staff_form_link" },
           ];
-
   return (
     <>
       <NavBar

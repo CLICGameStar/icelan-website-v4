@@ -1,67 +1,24 @@
-export default function SocialFooter(){
+export default function SocialFooter({social_media}: 
+  {social_media: {name: string, href: string; alt: string, img_src:string}[] }){
         
   return (
  <div className="footer-col contact-links">
           <h3>Contact</h3>
           <ul className="unstyled-list">
-            <li>
+          {social_media.map((link) => (<li key={link.name}>
               <a
-                href="mailto:gamestar.clic@epfl.ch"
+                href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <img
                   className="footer-icon"
-                  alt="mail logo"
-                  src="assets/img/icons/email-logo-round.svg"
+                  alt={link.alt}
+                  src={link.img_src}
                 />
-                gamestar.clic@epfl.ch
+                {link.name}
               </a>
-            </li>
-            <li>
-              <a
-                href="https://t.me/CLICGameStar"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  className="footer-icon"
-                  alt="telegram logo"
-                  src="assets/img/icons/telegram-logo-round.svg"
-                />
-                @CLICGameStar
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://instagram.com/CLICGameStar"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  className="footer-icon"
-                  alt="instagram logo"
-                  src="assets/img/icons/instagram-logo-round.svg"
-                />
-                @CLICGameStar
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://discord.gg/tMaKxY8V4M"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  className="footer-icon"
-                  alt="discord logo"
-                  src="assets/img/icons/discord-logo-round.svg"
-                />
-                Discord ICeLAN
-              </a>
-            </li>
+            </li>))}
           </ul>
         </div>
-  );
- 
-    }
+  );}
