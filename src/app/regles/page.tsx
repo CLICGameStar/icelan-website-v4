@@ -1,6 +1,7 @@
 export default async function Regles() {
-  return <>
-       <section className="container rules">
+  return (
+    <>
+      <section className="container rules">
         <h2>Règlement ICeLAN</h2>
         <div className="rule-list">
           <h3>Résumé</h3>
@@ -252,6 +253,6 @@ export default async function Regles() {
           </p>
         </div>
       </section>
-  
-  </>;
+    </>
+  );
 }

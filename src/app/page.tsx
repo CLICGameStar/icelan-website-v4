@@ -4,10 +4,6 @@ import { getTranslation, queryTranslations } from "@/locales";
 import DirectusImage from "@/components/DirectusImage";
 
 export default async function Home() {
-
-
-
-
   let commissions = await directus().request(
     //@ts-ignore
     readItems("commissions", {
@@ -16,10 +12,6 @@ export default async function Home() {
     }),
   );
 
-
-
-
-  
   let num_edition = 6;
   let inscription_form = "";
   let start_date = "6 Décembre 2025 9h";
