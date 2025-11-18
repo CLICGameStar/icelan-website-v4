@@ -18,7 +18,7 @@ export default function InscriptionFooter({
         </a>
       </div>
       <br />
-      <p>ⓒ Game* {curr_year}</p>
+      <p> © Game* {curr_year}</p>
     </div>
   );
 }

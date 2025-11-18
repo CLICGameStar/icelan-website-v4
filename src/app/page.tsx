@@ -4,6 +4,22 @@ import { getTranslation, queryTranslations } from "@/locales";
 import DirectusImage from "@/components/DirectusImage";
 
 export default async function Home() {
+
+
+
+
+  let commissions = await directus().request(
+    //@ts-ignore
+    readItems("commissions", {
+      filter: { slug: { _eq: "game-star" } },
+      ...queryTranslations,
+    }),
+  );
+
+
+
+
+  
   let num_edition = 6;
   let inscription_form = "";
   let start_date = "6 Décembre 2025 9h";
@@ -52,7 +68,7 @@ export default async function Home() {
             <li className="quick-info-item">
               <img src="/icons/price.svg" className="quick-info-icon" />
               Etudiant·e·s: {prix_etudiant} CHF <br />
-              Externes: {prix_externe} CHF
+              Autres: {prix_externe} CHF
             </li>
           </ul>
         </div>
