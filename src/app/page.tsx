@@ -1,5 +1,5 @@
 import { directus } from "@/directus";
-import { readSingleton } from "@directus/sdk";
+import { readItems } from "@directus/sdk";
 import { getTranslation, queryTranslations } from "@/locales";
 import DirectusImage from "@/components/DirectusImage";
 
