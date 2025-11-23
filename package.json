@@ -14,10 +14,11 @@
     "populate-directus": "sh directus-config/populate.sh"
   },
   "dependencies": {
-    "@directus/sdk": "^18.0.3",
+    "@directus/sdk": "^19.0.0",
     "@types/node": "22.10.0",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
+    "body-scroll-lock": "^4.0.0-beta.0",
     "eslint": "^9.37.0",
     "eslint-config-next": "15.0.3",
     "next": "^15.5.4",
